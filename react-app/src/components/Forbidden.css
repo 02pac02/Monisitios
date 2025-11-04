@@ -1,0 +1,35 @@
+.forbidden-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  
+  .forbidden-container h1 {
+    font-size: 36px;
+    color: #dc3545;
+  }
+  
+  .forbidden-container p {
+    font-size: 18px;
+    color: #495057;
+  }
+  
+  .forbidden-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .forbidden-container a:hover {
+    background-color: #0056b3;
+  }
+  

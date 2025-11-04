@@ -1,0 +1,453 @@
+//Componentes
+@import "./components/navbar";
+
+:root {
+  --primary-color: rgb(255, 103, 0); /* Azul */
+  --secondary-color: #2ecc71; /* Verde */
+  --accent-color: #e74c3c; /* Rojo */
+}
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+// .fondo{
+//     background-image: url('../../public/img/fondo.png');
+//     background-size: cover;
+//     background-position: center;
+//     height: 100vh; /* Ajusta la altura según sea necesario */
+//     width: 100%;
+// }
+
+.btn-apli {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.btn-apli:hover {
+  background-color: black;
+  color: var(--primary-color);
+}
+
+.btn-apli-invert {
+  background-color: black;
+  color: var(--primary-color);
+}
+
+.btn-apli-invert:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1%;
+}
+
+.icon-container .hover-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  background-color: black;
+  color: var(--primary-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -50px; /* Ajusta esto según sea necesario */
+  left: -20%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.icon-container:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.icon-container .hover-text2 {
+  visibility: hidden;
+  opacity: 0;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.837);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.icon-container:hover .hover-text2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  // background-image: url('../../public/img/fondo.png');
+  background-color: rgb(255, 103, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+  width: 100%;
+}
+
+.login-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px 0 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none; /* Remove top border to connect with label */
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.informacion {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px auto 20px; /* Añade margen superior de 20px y centrado horizontal */
+  border: 1px solid black;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.mensaje-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo opaco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto de profundidad */
+  z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
+.btn-2 {
+  margin-top: 1%;
+}
+
+.custom-progressbar {
+  width: 100px; /* Ancho deseado */
+  height: 100px; /* Altura deseada */
+}
+
+.custom-progressbar .CircularProgressbar-trail {
+  stroke: #d6d6d6; /* Cambia el color del borde de fondo */
+}
+
+.custom-progressbar .CircularProgressbar-path {
+  stroke: #61dafb; /* Cambia el color del borde de la barra de progreso */
+}
+
+.custom-progressbar .CircularProgressbar-text {
+  fill: #61dafb; /* Cambia el color del texto */
+  font-size: 24px; /* Tamaño de fuente del texto */
+}
+
+//   .navbar{
+//     background-image: url('../../public/img/fondo2.jpg');
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+nav {
+  background-color: rgb(255, 103, 0, 0.6);
+}
+
+.monitores {
+  background-color: rgb(255, 103, 0, 0.6);
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+}
+
+.div-titulo {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 102, 0, 0.26);
+  margin-bottom: 2%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+// .buscador{
+//     background-color: rgb(255, 103, 0, 0.6);
+// }
+// .tabla{
+//     border-radius: 10px;
+// }
+
+/* CSS personalizado para cambiar los colores de la tabla */
+.monitores {
+  color: #333; /* Color del texto */
+}
+
+.div-titulo {
+  text-align: center; /* Centrar el texto del título */
+  margin-bottom: 20px; /* Espacio inferior entre el título y el buscador */
+}
+
+.buscador {
+  border-color: rgba(255, 102, 0, 0.195); /* Color del borde del buscador */
+}
+
+.buscador:focus {
+  border-color: rgba(
+    255,
+    102,
+    0,
+    0.195
+  ); /* Color del borde del buscador cuando está enfocado */
+}
+
+.tabla {
+  border-collapse: collapse; /* Colapsar los bordes de la tabla */
+  width: 100%;
+  border: none;
+}
+
+.tabla2 {
+  width: 100%;
+}
+
+.tabla th,
+.tabla td {
+  padding: 8px; /* Espaciado interno de las celdas */
+}
+
+.tabla th {
+  background-color: rgba(
+    255,
+    102,
+    0,
+    0.467
+  ); /* Color de fondo del encabezado */
+  color: black; /* Color del texto del encabezado */
+}
+
+.tabla tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 102, 0, 0.195);
+}
+
+.tabla tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.contenedor {
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+.datos div {
+  background-color: rgba(255, 102, 0, 0.181);
+  width: 100%;
+  // border: 1px solid #2ecc71;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.derecha {
+  border-right: 1px solid black;
+}
+
+.chart-container {
+  margin: 1%;
+  align-items: center;
+  text-align: center;
+}
+
+.registrar-web {
+  margin-top: 2%;
+  width: 100%;
+  background-color: #2ecc71;
+  padding: 2%;
+}
+
+.bien {
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 2%;
+}
+
+.error {
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../public/img/foto1.jpg"); /* Ruta de tu imagen */
+  // background-color: rgb(255, 103, 0, 0.6);
+  background-size: cover; /* La imagen se ajustará al tamaño del contenedor */
+  background-position: center;
+  width: 100%;
+}
+
+.contenido-principal,
+.contenido-secundario {
+  width: calc(50% - 5px); /* 50% del ancho del contenedor menos el margen entre ellos */
+}
+
+.contenido-principal {
+  background-color: rgba(255, 102, 0, 0.893);
+  border-radius: 0px 10px 10px 0px;
+  padding: 2%;
+}
+
+.contenido-secundario {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px 0px 0px 10px;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Se necesita para posicionar el pseudo-elemento */
+  overflow: hidden; /* Oculta el overflow generado por los bordes animados */
+}
+
+.contenido-secundario::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; /* Grosor inicial del borde */
+  border-radius: inherit;
+  animation: animateBorder 2s linear infinite; /* Animación del borde */
+}
+
+@keyframes animateBorder {
+  0% {
+    border-color: transparent; /* Color inicial del borde */
+    border-left-color: rgba(255, 102, 0, 0.893); /* Color del borde que se animará */
+    border-top-color: rgba(255, 102, 0, 0.893); /* Color del borde que se animará */
+  }
+  25% {
+    border-color: transparent; /* Color del borde que se animará */
+    border-right-color: rgba(255, 102, 0, 0.893); /* Color del borde que se animará */
+  }
+  50% {
+    border-color: transparent; /* Color del borde que se animará */
+    border-bottom-color: rgba(255, 102, 0, 0.893); /* Color del borde que se animará */
+  }
+  75% {
+    border-color: transparent; /* Color del borde que se animará */
+    border-left-color: rgba(255, 102, 0, 0.893); /* Color del borde que se animará */
+  }
+  100% {
+    border-color: transparent; /* Color final del borde */
+    border-top-color: rgba(255, 102, 0, 0.893); /* Color final del borde */
+  }
+}
+
+.show{
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+}

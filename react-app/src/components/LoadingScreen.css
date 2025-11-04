@@ -1,0 +1,42 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Puedes cambiar el color de fondo según tu preferencia */
+}
+
+.spinner {
+    position: relative;
+    width: 150px; /* Ajusta el tamaño del contenedor según sea necesario */
+    height: 150px; /* Ajusta el tamaño del contenedor según sea necesario */
+}
+
+.loading-image {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    border-top-color: #333; /* Color del borde superior (círculo de carga) */
+    animation: spin 1s linear infinite; /* Animación de rotación */
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

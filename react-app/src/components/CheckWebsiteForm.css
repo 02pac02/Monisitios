@@ -1,0 +1,51 @@
+.check-website-form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 20px;
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de campos */
+  }
+  
+  label {
+    display: block; /* Mostrar etiquetas en una línea */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Espacio inferior */
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espacio interno */
+    border-radius: 4px; /* Borde redondeado */
+    border: 1px solid #ccc; /* Borde gris */
+  }
+  
+  select {
+    appearance: none; /* Quitar estilos de selección nativos */
+  }
+  
+  button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Quitar borde */
+    border-radius: 4px; /* Borde redondeado */
+    padding: 10px 20px; /* Espacio interno */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar por encima */
+  }
+  
+  .info-box{
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+    margin-right: 20%;
+  }
