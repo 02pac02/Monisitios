@@ -86,13 +86,18 @@ La autenticación se gestiona con **tokens JWT**, garantizando seguridad y contr
 ```bash
 git clone https://github.com/02pac02/Monisitios.git
 cd Monisitios
+```
 ### 2️⃣ Levantar los contenedores
 Asegúrate de tener Docker instalado. Luego ejecuta:
+```bash
 docker compose up -d
+```
 ### 3️⃣ Inicializar datos y tareas
+```bash
 make data        # Crea tablas y roles
 make automatic   # Ejecuta el cron para comprobaciones automáticas
 make proof       # Prueba de chequeo de URLs
+```
 ### 4️⃣ Acceder a la aplicación
 
 Abre tu navegador y entra en
